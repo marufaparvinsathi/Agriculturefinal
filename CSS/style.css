@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Serif', serif;
+}.flex{
+    display: flex;
+}
+.bold{
+    font-weight: bold;
+}
+.style-icon{
+    text-align: center;
+    font-size: 30px;
+}
+.btn:hover{
+    background: cornsilk;
+    border: 1px solid rgb(13, 214, 197);
+}
+.btn:hover a{
+    color:rgb(13, 214, 197) ;
+}
+.center{
+    text-align: center;
+}
+/* address bar */
+.adress-bar{
+    padding-top: 20px;   
+    border-bottom: .5px solid rgb(209, 202, 202);
+    background-color: #faf8dd;
+}
+
+.adress-bar .address i{
+    padding-top: 4px;
+    padding-right: 4px;
+}
+.adress-bar .address p{
+    font-size: 15px;
+}
+.adress-bar .email i{
+    padding-top: 5px;
+    padding-right: 4px;
+}
+.adress-bar .email p{
+    font-size: 15px;
+}
+.adress-bar .icon a{
+color:rgb(13, 214, 197);
+font-size: 17px;
+padding-right: 5px;
+}
+@media only screen and (max-width:400px){
+    .adress-bar{
+        display: none;
+    }
+}
+
+/*-------Navbar-----*/
+
+.navbar ul li a{
+    font-size: 18px;
+}
+.navbar ul li:hover{
+    background: rgb(13, 214, 197);
+    border-radius: 10px;
+}
+.ghh {
+  background-color: rgb(13, 214, 197) ;
+  height: 2.5rem;
+  width: 9rem;
+  border-radius: 25px 3px;
+}
+.navbar .btn:hover{
+    background: cornsilk;
+    border: 1px solid rgb(13, 214, 197);
+}
+.navbar .btn:hover a{
+    color:rgb(13, 214, 197) ;
+}
+.ghh a{
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 18px;
+}
+.style{
+    font-style: italic;
+}
+nav {
+    background-color: #faf8dd;
+box-shadow: 3px 3px 3px;
+}
+.logo img{
+    width: 4rem;
+}
+
+
+/* hero */
+.hero{
+    background-color: #faf8dd;
+    margin-top: 5rem;
+}
+.hero h1{
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+.hero p{
+    font-size: 18px; 
+}
+.hero img{
+    width: 100%;
+    border-radius: 20%;
+    margin: 4rem 0;
+}
+.hero .btn:hover{
+    background: cornsilk;
+    border: 1px solid rgb(13, 214, 197);
+}
+.hero .btn:hover a{
+    color:rgb(13, 214, 197) ;
+}
+@media only screen and (max-width:400px){
+    .hero h1{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}
+/* introduction */
+
+.intro img{
+    width: 100%;
+    border-radius: 20px;
+}
+.intro h1{
+    text-align: center;
+}
+.intro h2{
+    font-size: 39px;
+    letter-spacing: 4px;
+    padding-top: 6px;
+}
+.intro h3{
+    padding: 10px 0;
+    font-size: 22px;
+}
+/* features */
+
+.features .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 22rem;
+    transition: all ease .5s;
+}
+.features .card:hover{
+    transform: translateY(-5%);
+}
+.features .icon{
+    font-size: 45px;
+    text-align: center;
+    color: rgb(201, 130, 38);
+    padding: 20px 0;
+}
+.features h3{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.features p{
+    text-align: center;
+}
+.features .read{
+margin: 1rem 5rem;
+}
+/* Products */
+
+.imagee {
+    position: relative;
+    width: 50%;
+    
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 8rem;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .imagee:hover .image {
+    opacity: 0.3;
+  }
+  
+  .imagee:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #6d81ad;
+    color: white;
+    font-size: 16px;
+    padding:8px ;
+  }
+  .products h4{
+      padding: 10px 0;
+  }
+  @media only screen and (max-width:400px){
+    .middle{
+        top: 30%;
+        left: 50%;   
+    } 
+    .text {
+        font-size: 13px;
+        padding:8px ;
+      }  
+  }
+  /* About */
+  .about{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(70deg, rgba(211, 125, 55, 0.3) , rgba(66, 231, 16, 0.3)),url(../IMAGE/background-abt.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    
+  }
+  .about h2{
+      padding-top: 8rem;
+      color: white;
+      font-size: 45px;
+      font-weight: bold;
+  }
+  .about p{
+    color: rgb(233, 220, 220);
+    padding-top: 2rem;
+  }
+  .about button{
+    margin-top: 8rem;
+  }
+  @media only screen and (max-width:400px){
+    .about{
+        width: 100%;
+        height: 90vh; 
+      }
+      .about button{
+        margin-top: 10px;
+      }
+      .about h2{
+        padding-top: 4rem;
+    }
+  }
+
+
+  .gallery img{
+      width: 100%;
+  }
+/* TEAM */
+.team img{
+    width:100% ;
+}
+.team h4{
+    text-align: center;
+    margin-top: 2rem;
+}
+.team p{
+    text-align: center;
+}
+.team .icon{
+    text-align: center; 
+    
+}
+.team .icon i{
+    padding-right:10px ;
+    padding-bottom: 15px;
+    
+}
+.team .icon  a{
+    font-size: 20px;
+}
+.team .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all ease .5s;
+}
+.team .card:hover{
+    transform: translateY(-5%);
+}
+
+/*-------footer-----*/
+.footer-icon i{
+    font-size: 17px;
+}
+.footer-icon i{
+    background: rgb(13, 214, 197);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+    color: cornsilk;
+}
+
+.footer p{
+    line-height: 30px;
+}
+.footer-icon{
+text-align: center;
+}
+.quick{
+    text-align: center;
+}
+.quick h3{
+    font-weight: bold;
+    font-size: 23px;
+    color:rgb(13, 214, 197) ;
+}
+.quick .quick-item a{
+    text-decoration: none;
+    color: black;
+}
+.quick .quick-item ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.quick .quick-item ul li {
+    padding-top: 8px;
+    font-size: 17px;
+font-weight: bold;
+}
+
+.quick-item span{
+    padding-left: 8px;
+}
+.last li {
+    margin-top: 15px;
+   
+}
+/* whyus */
+.whyus img{
+    width: 100%;
+    border-radius: 10px 10px;
+    padding-top: 30px;
+}
+
+.whyus .why-icon i{
+    background: rgb(13, 214, 197);
+    height: 3rem;
+    width: 3rem;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+    color: cornsilk;
+}
+.whyus .why-icon{
+    padding:20px ;
+}
+.whyus h4{
+    font-size: 23px;
+    font-weight: bold;
+}
+.whyus p{
+    font-size: 15px;
+}
+
+.copyright{
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+.mamun img{
+    width: 100%;
+}
